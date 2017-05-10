@@ -16,6 +16,7 @@
 <body>
     <div id="ice">
         <h1>{{msg}}</h1>
+      <div><span>{{alllist.name}}總共點惹{{alllist.lists}}</span></div>
         <div class="content">
             <form class="left">
                 <div>
@@ -75,7 +76,7 @@
                     </div>
                 </div>
                 <input type="submit" value="偶好想ㄘ" @click.prevent="onSubmit">
-                <span>{{alllist.name}}總共點惹{{alllist.lists}}</span>
+
 
             </form>
             <div class="right">
