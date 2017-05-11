@@ -17,6 +17,9 @@
     <div id="ice">
         <h1>{{msg}}</h1>
       <div><span>{{alllist.name}}總共點惹{{alllist.lists}}</span></div>
+      <div class="">
+                            <span>5樣料$35 超過一樣+5塊</span>
+      </div>
         <div class="content">
             <form class="left">
                 <div>
@@ -83,7 +86,7 @@
                 <h1>快熱死的</h1>
                 <div v-for="order in orders">
                     <h2>  {{order.name}} </h2>
-                    <span>已點{{order.lists}}</span>
+                    <span>已點{{order.lists}} 總共{{order.cost}}元 快付錢不找零</span>
                     <button @click="removeUser(order)">我好後悔我好胖</button>
                 </div>
             </div>

@@ -29,10 +29,16 @@ var app = new Vue({
     },
     methods: {
         onSubmit: function() {
+          let money = this.alllist.lists
+          if(money.length<5){
+            this.alllist.cost = 35
+          }
+          else{
+            this.alllist.cost= 35+(money.length-5)*5
+          }
                 usersRef.push(this.alllist)
                 this.alllist.name = ''
                 this.alllist.lists = []
-                  console.log(this.alllist)
         },
         removeUser: function(order) {
             usersRef.child(order['.key']).remove()
