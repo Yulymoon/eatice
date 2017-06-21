@@ -33,7 +33,7 @@ github https://github.com/Yulymoon/eatice
     <script>
       // Initialize Firebase
       var config = {
-        apiKey: "AIzaSyC425MfvWlBO8pdL7r9tGaaN9SEBzWJntA",
+        apiKey: "",
         authDomain: "eatice-11d93.firebaseapp.com",
         databaseURL: "https://eatice-11d93.firebaseio.com",
         projectId: "eatice-11d93",
