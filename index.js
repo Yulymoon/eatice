@@ -31,10 +31,10 @@ var app = new Vue({
         onSubmit: function() {
           let money = this.alllist.lists
           if(money.length<5){
-            this.alllist.cost = 35
+            this.alllist.cost = 45
           }
           else{
-            this.alllist.cost= 35+(money.length-5)*5
+            this.alllist.cost= 45+(money.length-5)*5
           }
                 usersRef.push(this.alllist)
                 this.alllist.name = ''
