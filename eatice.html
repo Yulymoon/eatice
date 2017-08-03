@@ -15,17 +15,17 @@
 
 <body>
     <div id="ice">
-        <h1>{{msg}}</h1>
-      <div><span>{{alllist.name}}總共點惹{{alllist.lists}}</span></div>
-      <div class="">
+      <h1 class="title">{{msg}}</h1>
+      <div class="title smoke"><span><span class="titlecolor">{{alllist.name}}</span>總共點惹<span class="name">{{alllist.lists}}</span></span></div>
+      <div class="title smoke">
                             <span>5樣料$45 超過一樣+5塊</span>
       </div>
         <div class="content">
             <form class="left">
-                <div>
+                <div class="name">
                     <input type="text" v-model="alllist.name" placeholder="還不說你叫什麼名字">
                 </div>
-                <div class="grid">
+                <div class="grid smoke">
                     <div class="sele">
                         <input id="湯圓" type="checkbox" value="湯圓" v-model="alllist.lists"><label for="湯圓"><img src="img/5.png" alt="">湯圓 </label>
                     </div>
@@ -33,7 +33,7 @@
                         <input id="紅豆" type="checkbox" value="紅豆" v-model="alllist.lists"><label for="紅豆"><img src="img/14.png" alt="">紅豆 </label>
                     </div>
                     <div class="sele">
-                        <input id="大紅豆" type="checkbox" value="大紅豆" v-model="alllist.lists"><label for="大紅豆"><img src="img/13.png" alt="">大紅豆</label>
+                        <input id="大豆" type="checkbox" value="大豆" v-model="alllist.lists"><label for="大豆"><img src="img/13.png" alt="">大豆</label>
                     </div>
                     <div class="sele">
                         <input id="芋圓" type="checkbox" value="芋圓" v-model="alllist.lists"><label for="芋圓"><img src="img/3.png" alt="">芋圓</label>
@@ -43,9 +43,6 @@
                     </div>
                     <div class="sele">
                         <input id="花生" type="checkbox" value="花生" v-model="alllist.lists"><label for="花生"><img src="img/15.png" alt="">花生</label>
-                    </div>
-                    <div class="sele">
-                        <input id="綠豆" type="checkbox" value="綠豆" v-model="alllist.lists"><label for="綠豆"><img src="img/11.png" alt="">綠豆</label>
                     </div>
                     <div class="sele">
                         <input id="薏仁" type="checkbox" value="薏仁" v-model="alllist.lists"><label for="薏仁"><img src="img/8.png" alt="">薏仁</label>
@@ -63,10 +60,10 @@
                         <input id="仙草" type="checkbox" value="仙草" v-model="alllist.lists"><label for="仙草"><img src="img/12.png" alt="">仙草</label>
                     </div>
                     <div class="sele">
-                        <input id="愛玉" type="checkbox" value="愛玉" v-model="alllist.lists"><label for="愛玉"><img src="img/2.png" alt="">愛玉</label>
+                        <input id="粉粿" type="checkbox" value="粉粿" v-model="alllist.lists"><label for="粉粿"><img src="img/2.png" alt="">粉粿</label>
                     </div>
                     <div class="sele">
-                        <input id="杏仁豆腐" type="checkbox" value="杏仁豆腐" v-model="alllist.lists"><label for="杏仁豆腐"><img src="img/4.png" alt="">杏仁豆腐</label>
+                        <input id="粉條" type="checkbox" value="粉條" v-model="alllist.lists"><label for="粉條"><img src="img/4.png" alt="">粉條</label>
                     </div>
                     <div class="sele">
                         <input id="蓮子" type="checkbox" value="蓮子" v-model="alllist.lists"><label for="蓮子"><img src="img/17.png" alt="">蓮子</label>
@@ -75,18 +72,26 @@
                         <input id="鳳梨" type="checkbox" value="鳳梨" v-model="alllist.lists"><label for="鳳梨"><img src="img/6.png" alt="">鳳梨</label>
                     </div>
                     <div class="sele">
-                        <input id="麵茶" type="checkbox" value="麵茶" v-model="alllist.lists"><label for="麵茶"><img src="img/1.png" alt="">麵茶</label>
+                        <input id="綠豆" type="checkbox" value="綠豆" v-model="alllist.lists"><label for="綠豆"><img src="img/1.png" alt="">綠豆</label>
+                    </div>
+                    <div class="sele">
+                        <input id="愛玉" type="checkbox" value="愛玉" v-model="alllist.lists"><label for="愛玉"><img src="img/19.png" alt="">愛玉</label>
+                    </div>
+                    <div class="sele">
+                        <input id="杏仁豆腐" type="checkbox" value="杏仁豆腐" v-model="alllist.lists"><label for="杏仁豆腐"><img src="img/20.png" alt="">杏仁豆腐</label>
                     </div>
                 </div>
-                <input type="submit" value="偶好想ㄘ" @click.prevent="onSubmit">
-
+                <div class="sub">
+                  <button class="" @click.prevent="onSubmit">偶想ㄘ</button>
+                  <!-- <input type="submit" value="偶好想ㄘ" @click.prevent="onSubmit"> -->
+                </div>
 
             </form>
-            <div class="right">
+            <div class="right smoke">
                 <h1>快熱死的</h1>
                 <div v-for="order in orders">
-                    <h2>  {{order.name}} </h2>
-                    <span>已點{{order.lists}} 總共{{order.cost}}元 快付錢不找零</span>
+                    <h2 class="getcolor">  {{order.name}} </h2>
+                    <span>已點<span class="titlecolor">{{order.lists}} </span>總共<span class="titlecolor">{{order.cost}} </span>元 快付錢不找零</span>
                     <button @click="removeUser(order)">我好後悔我好胖</button>
                 </div>
             </div>

@@ -1,15 +1,78 @@
 /* line 1, ../sass/eat.scss */
 img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
-/* line 8, ../sass/eat.scss */
+/* line 6, ../sass/eat.scss */
+.smoke {
+  color: #404344;
+}
+
+/* line 11, ../sass/eat.scss */
+.ice h1 {
+  text-align: center;
+}
+
+/* line 16, ../sass/eat.scss */
+.title {
+  text-align: center;
+}
+
+/* line 20, ../sass/eat.scss */
+.titlecolor {
+  font-size: 2rem;
+  color: #80d0c7;
+}
+
+/* line 25, ../sass/eat.scss */
+.name {
+  text-align: center;
+  margin: 2%;
+}
+
+/* line 30, ../sass/eat.scss */
+.sub {
+  text-align: center;
+  margin: 2%;
+}
+/* line 34, ../sass/eat.scss */
+.sub button {
+  padding: 3%;
+  border: 5px solid white;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background: #80d0c7;
+  color: white;
+}
+
+/* line 45, ../sass/eat.scss */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 51, ../sass/eat.scss */
 .sele {
   display: flex;
+  width: 25vw;
+  align-items: center;
 }
 
-/* line 12, ../sass/eat.scss */
+/* line 57, ../sass/eat.scss */
 .content {
   display: flex;
+  flex-direction: column;
+}
+
+/* line 62, ../sass/eat.scss */
+.cursor {
+  cursor: pointer;
+}
+
+/* line 66, ../sass/eat.scss */
+.getcolor {
+  color: #80add0;
 }
